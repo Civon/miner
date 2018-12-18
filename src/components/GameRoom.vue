@@ -66,4 +66,7 @@ export default {
   margin: auto;
   border: 3px solid purple;
 }
+h1 {
+  margin: auto 20vh;
+}
 </style>
