@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="game-room" id="gm">
     <h1>{{ msg }}</h1>
     <!-- <div @click="">start</div> -->
     <table id="roomList">
@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="value in rooms" :key="value.id">
+        <tr v-for:="value in rooms" >
           <td>{{ value.id }}</td>
           <td>{{ value.bets }}</td>
           <td>{{ value.comments }}</td>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: " ",
+  name: "game-room",
   props: {
     msg: String
   },
@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     // TODO: load room information when page loading
-    joinRoom: id => {
+    joinRoom: () => {
       // turn to the playing page where user wanna join
     }
     // showRoom: bet => {
@@ -58,6 +58,10 @@ export default {
 </script>
 
 <style scoped>
+.game-room {
+  height: 80vh;
+  background-color: aqua;
+}
 #roomList {
   margin: auto;
   border: 3px solid purple;
