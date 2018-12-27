@@ -1,5 +1,9 @@
 <template>
+<div id="test" >
   <button @click="setProv()">set Prov</button>
+  <button @click="$emit('test')">test  datat</button>
+
+</div>
 </template>
 
 <script>
@@ -9,7 +13,7 @@ export default {
   name: "test",
   props: {},
   methods: {
-    setProv: async () => {
+    async setProv() {
       // ? typeof web3 !== ‘undefined’   need to be check?
       if (window.ethereum) {
         // ? miss this one???

@@ -10,7 +10,7 @@
 export default {
   name: "landing-banner",
   props: {}
-};
+}
 </script>
 
 <style  scoped>
